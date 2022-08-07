@@ -23,6 +23,7 @@
     "scripts": {
         "init:husky": "npx husky-init && husky install && husky set .husky/pre-commit 'npm run typecheck'",
         "dev": "next dev",
+        "start": "next start",
         "build": "tsc && next build",
         "build-stats": "cross-env ANALYZE=true npm run build",
         "export": "next export",
@@ -54,13 +55,15 @@
         "clsx": "^1.2.1",
         "next": "12.2.4",
         "react": "18.2.0",
-        "react-dom": "18.2.0"
+        "react-dom": "18.2.0",
+        "react-intl": "^6.0.5"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.3",
         "@commitlint/config-conventional": "^17.0.3",
         "@cypress/react": "^6.0.0",
         "@next/bundle-analyzer": "^12.2.4",
+        "@trivago/prettier-plugin-sort-imports": "^3.3.0",
         "@types/node": "18.6.4",
         "@types/react": "18.0.15",
         "@types/react-dom": "18.0.6",

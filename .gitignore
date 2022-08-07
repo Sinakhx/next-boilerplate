@@ -28,6 +28,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+tsconfig.tsbuildinfo
 
 # logs
 *.log
